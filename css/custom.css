@@ -1,6 +1,6 @@
 :root {
   /* Colours */
-  --primary-bg-color: #e8ebee; /* used */
+  --primary-bg-color: #fceb94; /* used */
   --primary-font-color: #474d52; /* used */
 
   --secondary-bg-color: #5d656c; /* used */
@@ -44,11 +44,11 @@
   --form-submit-size: 1rem;
 
   /* Text colors */
-  --logotype-color: #ffffff;
+  --logotype-color: #fffae2;
   --headline-color: #bbc3ca;
   --headline-color-inverted: #f9fcfe;
   --bodytext-color: #575c61;
-  --bodytext-color-inverted: #f9fcfe;
+  --bodytext-color-inverted: #07090a;
   --cta-text-color: #bbc3ca;
   --cta-text-color-inverted: #bbc3ca;
   --followup-text-color: #575c61;
@@ -58,9 +58,9 @@
   --form-submit-color-inverted: #bbc3ca;
 
   /* Background colors */
-  --logotype-background-color: #a9aaae;
-  --header-background-color: #cfd5e5;
-  --article-background-color: #dbdde3;
+  --logotype-background-color: #000000;
+  --header-background-color: #ff4b00;
+  --article-background-color: #ffffff;
   --news-background-color: #dbdde3;
   --news-background-color-inverted: #eeebe9;
   --info-background-color: #dbdde3;
@@ -81,6 +81,6 @@
   --form-submit-bg-color-inverted: #dbdde3;
 
   /* Info-boxes */
-  --info-bg-color-yellow: #d6d5ce;
-  --info-bg-color-green: #a6a6a0;
+  --info-bg-color-yellow: #fffae2;
+  --info-bg-color-green: #def5db;
 }
