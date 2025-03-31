@@ -78,7 +78,7 @@
   padding: 0.3rem 0.5rem;
   border: 1px solid var(--border-color);
   border-radius: var(--border-radius);
-  background-color: var(--followup-text-bg-color);
+  background-color: var(--cta-background-color);
   color: var(--followup-text-color);
   text-align: center;
   text-decoration: none;

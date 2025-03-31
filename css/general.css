@@ -23,8 +23,10 @@ footer {
 }
 
 header {
-  background-color: #6f90eb;
+  background-color: var(--menu-background-color);
+  color: var(--menu-background-color);
 }
+
 .logo-wrapper {
   background-color: var(--logotype-background-color);
   color: var(--logotype-color);
@@ -118,6 +120,7 @@ header nav li a {
   padding: 0.5rem 1rem;
   border-radius: var(--border-radius);
 }
+
 header > nav li > a:after {
   content: " \2192";
 }
@@ -126,6 +129,10 @@ nav a:hover {
 }
 nav a:active {
   color: var(--active-color);
+}
+
+.menuItem1 {
+  background-color: var(--link2-color);
 }
 
 /* FOOTER */
