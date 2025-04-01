@@ -20,6 +20,8 @@ function headUnHighlight1() {
 
 function headInfo1() {
   console.log("headInfo");
+  animateBoxes();
+
   document.querySelector(".info-text > h2").textContent = "klovnen";
   document.querySelector(".info-text > article > p").textContent =
     "lorem ipsum 40";
@@ -56,7 +58,9 @@ function headUnHighlight2() {
 }
 
 function headInfo2() {
-  console.log("headInfo1");
+  console.log("headInfo");
+  animateBoxes();
+
   document.querySelector(".info-text > h2").textContent = "Kniven";
   document.querySelector(".info-text > article > p").textContent =
     "lorem ipsum 30";
@@ -93,7 +97,8 @@ function headUnHighlight3() {
 }
 
 function headInfo3() {
-  console.log("headInfo1");
+  console.log("headInfo");
+  animateBoxes();
   document.querySelector(".info-text > h2").textContent = "teksten";
   document.querySelector(".info-text > article > p").textContent =
     "lorem ipsum 30";
@@ -131,7 +136,8 @@ function headUnHighlight4() {
 }
 
 function headInfo4() {
-  console.log("headInfo1");
+  console.log("headInfo");
+  animateBoxes();
   document.querySelector(".info-text > h2").textContent = "blodet";
   document.querySelector(".info-text > article > p").textContent =
     "lorem ipsum 30";
@@ -169,7 +175,8 @@ function headUnHighlight() {
 }
 
 function headInfo5() {
-  console.log("headInfo1");
+  console.log("headInfo");
+  animateBoxes();
   document.querySelector(".info-text > h2").textContent = "Blodet";
   document.querySelector(".info-text > article > p").textContent =
     "lorem ipsum 30";
@@ -184,4 +191,24 @@ function infoBox10() {
   console.log("headInfo");
   document.querySelector("#requirement").textContent =
     "mere tekst mere teeeekst";
+}
+
+function animateBoxes() {
+  document.querySelector("#efficiency").classList.remove("hide");
+  document.querySelector("#efficiency").classList.add("fadeIn");
+  document.querySelector("#requirement").classList.remove("hide");
+  document.querySelector("#requirement").classList.add("fadeIn");
+
+  document
+    .querySelector("#requirement")
+    .addEventListener("animationend", cleanup);
+}
+
+function cleanup() {
+  console.log("cleanup");
+  document
+    .querySelector("#requirement")
+    .removeEventListener("animationend", cleanup);
+  document.querySelector("#efficiency").classList.remove("fadeIn");
+  document.querySelector("#requirement").classList.remove("fadeIn");
 }

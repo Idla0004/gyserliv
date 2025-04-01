@@ -16,8 +16,8 @@
   --danger-color: #dc3545;
 
   /* Borders */
-  --border-color: #007bff; /* used */
-  --border-color-light: #f7f5c2; /* used */
+  --border-color: #ffd500; /* used */
+  --border-color-light: #f52727; /* used */
   --border-radius: 0.25rem;
 
   /* Links */
@@ -64,7 +64,7 @@
   --article-background-color: #23444b;
   --news-background-color: #dbdde3;
   --news-background-color-inverted: #1f2b29;
-  --info-background-color: #dbdde3;
+  --info-background-color: #1f2b29;
   --headline-bg-color: #03342e;
   --headline-bg-color-alert: #03342e;
   --headline-bg-color-inverted: #3e0e0e;
@@ -83,6 +83,6 @@
   --form-submit-bg-color-inverted: #dbdde3;
 
   /* Info-boxes */
-  --info-bg-color-yellow: #fffae2;
-  --info-bg-color-green: #def5db;
+  --info-bg-color-yellow: #657b50;
+  --info-bg-color-green: #123403;
 }

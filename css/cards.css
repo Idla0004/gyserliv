@@ -70,6 +70,11 @@
   border-radius: 0 0 var(--border-radius) var(--border-radius);
 }
 
+.news_card img {
+  justify-self: center;
+  margin-bottom: 10px;
+}
+
 .news_card .cta_btn {
   justify-self: center;
 }

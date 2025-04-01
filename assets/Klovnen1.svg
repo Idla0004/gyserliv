@@ -509,12 +509,5 @@
       </g>
       <path id="skærm-2" data-name="skærm" d="M340.01-1.14c3.85,2.03,16.2,23.57,16.97,38.54.08,1.48-1.07,2.67-2.43,2.09-14.34-6.13-66.49-26.41-111.28.05-.34.2-.57-.08-.51-.48,2.2-14.28,15.51-42.38,24.18-40.38.1.02,4.86.24,4.95.24l67.8-.24c.13,0,.19.12.31.18Z" style="fill: #6e7157; filter: url(#drop-shadow-35); stroke: #231f20; stroke-miterlimit: 10;"/>
     </g>
-    <g id="Layer_13" data-name="Layer 13">
-      <circle id="hovertelefon" cx="519.62" cy="677.66" r="20.21" style="fill: #a12021;"/>
-      <circle id="hoverblod" cx="262.75" cy="729.36" r="20.21" style="fill: #a12021;"/>
-      <circle id="hoverklovn" cx="489.62" cy="346.16" r="20.21" style="fill: #a12021;"/>
-      <circle id="hovertekst" cx="209.32" cy="363.99" r="20.21" style="fill: #a12021;"/>
-      <circle id="hoverkniv" cx="316.96" cy="232.75" r="20.21" style="fill: #a12021;"/>
-    </g>
   </g>
 </svg>

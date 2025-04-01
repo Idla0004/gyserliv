@@ -1,11 +1,17 @@
 #head-txt {
   fill: rgb(54, 54, 54);
 }
-.info-graphic,
+
+.info-graphic {
+  background-color: var(--info-background-color);
+  padding-left: 6cap;
+}
+
 .info-text {
   background-color: var(--info-background-color);
   padding: 0;
 }
+
 .info-text h2 {
   line-height: 3rem;
   text-align: center;
@@ -28,4 +34,21 @@
   line-height: 1.3;
   margin: 0 0 1.2rem 0;
   padding: 0;
+}
+
+.hide {
+  visibility: hidden;
+}
+
+.fadeIn {
+  animation: fadeIn 1.5s;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }
