@@ -80,3 +80,7 @@ footer ul {
     grid-template-columns: 1fr 1fr 1fr;
   }
 }
+
+#webform {
+  margin: 5px;
+}

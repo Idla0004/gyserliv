@@ -32,7 +32,40 @@
           <h2>Overskrift</h2>
           <p>Tekst</p>
         </article>
-        <form id="webform"></form>
+        <form id="webform">
+          <fieldset>
+            <legend>Hvor befinder du dig?</legend>
+            <input type="text" />
+          </fieldset>
+          <fieldset>
+              <legend>Hvad er din nuværende situation?</legend>
+              <div>
+                <input type="radio" id="huey" name="drone" value="huey" checked />
+                <label for="huey">Jeg bliver jagtet.</label>
+              </div>
+            
+              <div>
+                <input type="radio" id="dewey" name="drone" value="dewey" />
+                <label for="dewey">Jeg er fanget.</label>
+              </div>
+            
+              <div>
+                <input type="radio" id="louie" name="drone" value="louie" />
+                <label for="louie">Jeg har set noget uhyggeligt.</label>
+              </div>
+              <div>
+                <input type="radio" id="louie" name="drone" value="louie" />
+                <label for="louie">Jeg hører lyde, men ser ingenting.</label>
+              </div>
+              <div>
+                <input type="radio" id="louie" name="drone" value="louie" />
+                <label for="louie">Andet</label>
+                <input type="text">
+              </div>
+            </fieldset>
+          </fieldset>
+          <button>SEND NØDSIGNAL</button>
+        </form>
       </section>
       <section id="form-summary">
         <h2>Summary</h2>
