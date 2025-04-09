@@ -37,7 +37,7 @@ nav ul {
 }
 header ul {
   height: 100%;
-  width: clamp(175px, 50%, 300px);
+  width: clamp(255px, 50%, 300px);
 }
 footer ul {
   flex-direction: column;
@@ -81,6 +81,102 @@ footer ul {
   }
 }
 
-#webform {
+fieldset {
+  display: block;
+  padding: 10px;
+  background-color: #555d5e;
+  border: solid 1px;
+  border-color: black;
+  border-radius: 5px;
+}
+
+legend {
+  background-color: #596949;
+  font-family: ralewaysemi;
+  color: white;
+  padding: 5px 15px;
+  margin-top: 20px;
+  border-radius: 50px;
+  width: 300px;
+  text-align: left;
+}
+
+input {
   margin: 5px;
+}
+
+#form-section button {
+  background-color: red;
+  margin: 10px;
+  padding: 10px;
+  color: black;
+  border-radius: 10px;
+  border: solid 3px;
+  border-color: #4d0000;
+}
+.info {
+  display: grid;
+  padding: 5px;
+  max-width: 100px;
+}
+
+.box {
+  padding-bottom: 2px;
+}
+
+.hvor {
+  width: 300px;
+  height: 20px;
+}
+
+label {
+  font-family: ralewayreg;
+  font-size: 1rem;
+}
+
+input:hover {
+  background-color: #fdffef;
+}
+
+input:focus {
+  background-color: #fdffef;
+  border: solid;
+  border-color: #4d0000;
+}
+
+input:valid {
+  background-color: rgb(173, 255, 192);
+}
+
+input:invalid {
+  background-color: rgb(162, 19, 19);
+  color: white;
+  border: solid;
+  border-color: #4d0000;
+}
+
+input#email:user-invalid + span::before {
+  content: "Mangler gyldig mail-adresse";
+  color: red;
+  font-weight: 900;
+  font-size: 0.7rem;
+}
+
+input#name:user-invalid + span::before {
+  content: "Ikke gyldigt brugernavn";
+  color: red;
+  font-weight: 900;
+  font-size: 0.7rem;
+}
+
+input#phone:user-invalid + span::before {
+  content: "Ikke gyldigt telefonnummer";
+  color: red;
+  font-weight: 900;
+  font-size: 0.7rem;
+}
+
+input#farlighed {
+  width: 80%;
+  margin: 20px;
 }

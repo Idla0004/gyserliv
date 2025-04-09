@@ -1,3 +1,10 @@
+@media (min-width: 200px) {
+  header,
+  nav {
+    display: block;
+  }
+}
+
 html,
 body,
 header,
@@ -9,6 +16,31 @@ ul,
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+}
+
+@font-face {
+  font-family: creepster;
+  src: url(/fonts/Creepster-Regular.ttf);
+}
+
+@font-face {
+  font-family: nosifer;
+  src: url(/fonts/Nosifer-Regular.ttf);
+}
+
+@font-face {
+  font-family: ralewayreg;
+  src: url(/fonts/Raleway-Regular.ttf);
+}
+
+@font-face {
+  font-family: ralewaybold;
+  src: url(/fonts/Raleway-Bold.ttf);
+}
+
+@font-face {
+  font-family: ralewaysemi;
+  src: url(/fonts/Raleway-Medium.ttf);
 }
 
 body {
@@ -25,6 +57,8 @@ footer {
 header {
   background-color: var(--menu-background-color);
   color: var(--menu-background-color);
+  padding-top: 5px;
+  padding-bottom: 5px;
 }
 
 .logo-wrapper {
@@ -107,7 +141,7 @@ a {
   font-size: var(--logotype-size);
   color: var(--logotype-color);
   font-family: var(--logotype-font);
-  height: 3rem;
+  height: 5rem;
   width: 100%;
   display: flex;
   align-items: center;
@@ -122,7 +156,7 @@ header nav li a {
 }
 
 header > nav li > a:after {
-  content: " \2192";
+  content: normal;
 }
 nav a:hover {
   color: var(--hover-color);

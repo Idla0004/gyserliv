@@ -16,12 +16,14 @@
     <header>
       <nav>
         <div id="logotype-wrapper">
-          <a href="index.html"> LOGOTYPE </a>
+          <a href="index.html"> FANGET I EN GYSERFILM </a>
         </div>
-        <ul class="menu">
-          <li><a class="menuItem" href="instruction.html">Nærkontakt </a></li>
-          <li><a class="menuItem" href="register.html">Indberet</a></li>
-        </ul>
+        <div id="menu">
+          <ul class="menu">
+            <li><a class="menuItem" href="instruction.html">Nærkontakt </a></li>
+            <li><a class="menuItem" href="register.html">Indberet</a></li>
+          </ul>
+        </div>
       </nav>
     </header>
 
@@ -29,48 +31,246 @@
       <h1>INDBERET</h1>
       <section id="form-section">
         <article id="form-info">
-          <h2>Overskrift</h2>
-          <p>Tekst</p>
+          <h2>ALARMCENTRAL FOR GYSEROFRE</h2>
+          <p>Her kan du udfylde vores kontaktform og så vender vi tilbage til dig hurtigst muligt!</p>
         </article>
         <form id="webform">
-          <fieldset>
-            <legend>Hvor befinder du dig?</legend>
-            <input type="text" />
+          <fieldset id="where"><legend>Hvor</legend>
+            <p>Adresse(Hvor fandt observationen sted?)</p>
+          <div class="formcontainer">
+            <div class="form-group">
+            <label class="blok" for="location-street">Vejnavn</label>
+            <input
+              id="location-street"
+              name="location-street"
+              type="text"
+              required
+            />
+          </div>
+        </fieldset>
+        <fieldset id="what">
+          <legend>Hvad er din nuværende situation?</legend>
+          <div class="formcontainer">
+            <div>
+              <input
+                type="radio"
+                id="what1"
+                name="what-1"
+                value="Jeg bliver jagtet."
+                required
+              />
+              <label for="whatform1">Jeg bliver jagtet.</label>
+            </div>
+            <div>
+              <input
+                type="radio"
+                id="what2"
+                name="what-1"
+                value="Jeg er fanget."
+                required
+              />
+              <label for="whatform2">Jeg er fanget.</label>
+            </div>
+            <div>
+              <input
+                type="radio"
+                id="what3"
+                name="what-1"
+                value="Jeg har set noget uhyggeligt."
+                required
+              />
+              <label for="whatform3">Jeg har set noget uhyggeligt.</label>
+            </div>
+            <div>
+              <input
+                type="radio"
+                id="what4"
+                name="what-1"
+                value="Jeg hører lyde, men ser ingenting."
+                required
+              />
+              <label for="whatform4">Jeg hører lyde, men ser ingenting.
+              </label>
+          </div>
+        </fieldset>
+          <fieldset id="trussel">
+            <legend>Hvilken type trussel står du overfor?</legend>
+            <p>Vælg gerne flere</p>
+            <div class="form-group">
+              <div>
+              <input
+              type="checkbox"
+              id="morder"
+              name="behavior"
+              value="Seriemorder med maske."/>
+              <label for="morder">Seriemorder med maske</label>
+              </div>
+                <div>
+                <input
+                type="checkbox"
+                id="morder1"
+                name="behavior"
+                value="Et spøgelse/poltergejst."/>
+                <label for="morder1">Et spøgelse/poltergejst.</label>
+                </div>
+                <div>
+                  <input
+                  type="checkbox"
+                  id="morder2"
+                  name="behavior"
+                  value="En person, der ikke burde være i live (fx Zombie)."/>
+                  <label for="morder2">En person, der ikke burde være i live (fx Zombie).</label>
+                  </div>
+                  <div>
+                    <input
+                    type="checkbox"
+                    id="morder3"
+                    name="behavior"
+                    value="En dæmon eller besat person"/>
+                    <label for="morder3">En dæmon eller besat person.</label>
+                    </div>
+                    <div>
+                      <input
+                      type="checkbox"
+                      id="morder4"
+                      name="behavior"
+                      value="Jeg ved det ikke, men det føles HELT forkert!"/>
+                      <label for="morder4">Jeg ved det ikke, men det føles HELT forkert!</label>
+                      </div></div>
           </fieldset>
-          <fieldset>
-              <legend>Hvad er din nuværende situation?</legend>
-              <div>
-                <input type="radio" id="huey" name="drone" value="huey" checked />
-                <label for="huey">Jeg bliver jagtet.</label>
-              </div>
-            
-              <div>
-                <input type="radio" id="dewey" name="drone" value="dewey" />
-                <label for="dewey">Jeg er fanget.</label>
-              </div>
-            
-              <div>
-                <input type="radio" id="louie" name="drone" value="louie" />
-                <label for="louie">Jeg har set noget uhyggeligt.</label>
-              </div>
-              <div>
-                <input type="radio" id="louie" name="drone" value="louie" />
-                <label for="louie">Jeg hører lyde, men ser ingenting.</label>
-              </div>
-              <div>
-                <input type="radio" id="louie" name="drone" value="louie" />
-                <label for="louie">Andet</label>
-                <input type="text">
-              </div>
-            </fieldset>
+          <fieldset id="lost">
+            <legend>Har du mistet nogen fra din gruppe?</legend>
+            <div class="formdrop">
+              <div class="form-group">
+              <div><label for="groupcount">Hvis ja, hvor mange har du mistet?</label></div>
+                <select name="group-class" id="group-number">
+                  <option value="" disabled selected>Hvor mange har du mistet?</option>
+                  <option value="1">
+                  1
+                  </option>
+                  <option value="2">
+                  2
+                  </option>
+                  <option value="3">
+                  3
+                  </option>
+                  <option value="4">4</option>
+                  <option value="5">
+                    5
+                  </option>
+                  <option value="Dem alle sammen!">Dem alle sammen!</option>
+              </select></div>
+              <div id="group info"></div>
+            </div>
           </fieldset>
-          <button>SEND NØDSIGNAL</button>
-        </form>
+            <fieldset id="danger">
+              <legend>Er du i fare?</legend>
+              <div><label for="farlighed" class="farlighed">
+                Din vurdering af fareniveauet: <span id="range-value">0</span>%</label
+              ></div>
+              <input
+                type="range"
+                name="farlighed"
+                id="farlighed"
+                min="0"
+                max="100"
+                value="0"
+              />
+            </fieldset>   
+            <fieldset id="description">
+              <legend>Hvad skete der?</legend>
+              <div class="form-group">
+                <label class="blok" for="beskrivelse"
+                  >Beskriv din observation med egne ord og så mange detaljer som
+                  muligt
+                </label>
+                <textarea id="beskrivelse" name="beskrivelse"></textarea>
+              </div>
+            </fieldset>   
+            <fieldset id="contact">
+              <legend>Venligst indtast dine kontaktoplysninger</legend>
+              <div class="form-group">
+                  <label class="blok" for="name">Dit fulde navn:</label>
+                  <input
+                  type="text"
+                  id="name"
+                  name="name"
+                  placeholder="Navn Efternavn"
+                  required
+                />
+              </div>
+              <label class="blok" for="email">Din email </label>
+              <input
+                type="email"
+                id="email"
+                name="email"
+                placeholder="emailadresse"
+                required
+              />
+            </div>
+            <div class="form-group">
+              <p>
+                <strong
+                  >Udfyld Telefonnummer hvis du vil kontaktes akut...</strong
+                >
+              </p>
+              <div class="formcontainer">
+                <div class="form-group">
+                  <label for="area-code" class="blok">Land</label>
+                  <select id="area-code" name="area-code">
+                    <option value="+45" selected>+45(DK)</option>
+                    <option value="+46">+46(SE)</option>
+                    <option value="+47">+47(NO)</option>
+                  </select>
+                </div>
+                <div class="form-group">
+                  <label for="telefon" class="blok">Telefonnummer</label>
+                  <input
+                    type="tel"
+                    id="telefon"
+                    name="telefon"
+                    placeholder="Telefonnummer"
+                  />
+                </div>
+              </div>
+            </div>
+            <button id="submit_btn" type="button">Indsend nødsignal &#8594;</button>
+          </form>
+        </section>
       </section>
       <section id="form-summary">
         <h2>Summary</h2>
-        <article>
-          <p class="placeholder">Opsummering</p>
+        <article id="sum">
+          <div>
+            <h3>Hvor:</h3>
+            <p id="sumStreet"></p>
+          </div>
+          <div>
+            <h3>Nuværende situation:</h3>
+            <p id="sumAntal"></p>
+          </div>
+          <div>
+            <h3>Trussel:</h3>
+            <p id="sumBehaviour"></p>
+          </div>
+          <div>
+            <h3>Mistede:</h3>
+            <p id="sumType"></p>
+          </div>
+          <div>
+            <h3>Fare:</h3>
+            <p id="sumDanger"></p>
+          </div>
+          <div>
+            <h3>Situation:</h3>
+            <p id="sumSituation"></p>
+          </div>
+          <div>
+            <h3>Kontaktoplysninger:
+            </h3>
+            <p id="sumContact"></p>
+          </div>
+          <button id="reset_btn" type="reset">Godkend og luk</button>
         </article>
       </section>
     </main>
@@ -100,5 +300,6 @@
         </ul>
       </nav>
     </footer>
+    <script src="/js/register.js"></script>
   </body>
 </html>
