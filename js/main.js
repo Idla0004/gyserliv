@@ -212,3 +212,15 @@ function cleanup() {
   document.querySelector("#efficiency").classList.remove("fadeIn");
   document.querySelector("#requirement").classList.remove("fadeIn");
 }
+
+const openBtn = document.querySelector("#openBtn");
+openBtn.addEventListener("click", openDialog);
+function openDialog() {
+  document.querySelector("#dialog-1").showModal();
+}
+
+const closeBtn = document.querySelector("#closeBtn");
+closeBtn.addEventListener("click", closeDialog);
+function closeDialog() {
+  document.querySelector("dialog-1").closest();
+}
